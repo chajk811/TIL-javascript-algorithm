@@ -1,0 +1,28 @@
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>출력결과</title>
+    </head>
+    <body>
+        <script>
+            function solution(student) {
+                let answer;
+                let Q = parseInt(student / 12); // 몫
+                let R = student % 12; // 나머지 
+
+                if (R > 0) answer = Q + 1;
+                else answer = Q;
+
+                return answer;
+
+                // Math.ceil() => 올림
+                // let answer = Math.ceil(student/12);
+                // return answer;
+            }
+
+            console.log(solution(25));
+            console.log(solution(178));
+        </script>
+    </body>
+</html>

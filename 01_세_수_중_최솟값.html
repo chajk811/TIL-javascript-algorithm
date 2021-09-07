@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>출력결과</title>
+    </head>
+    <body>
+        <script>
+            function solution(a, b, c){
+                // 표준 내장 객체  Math 사용시
+                // let answer = Math.min(a, b, c);
+                // return answer;
+
+                // if문만 사용
+                let answer;
+
+                if (a < b) answer = a;
+                else answer = b;
+                if (c < answer) answer = c;
+
+                return answer;
+            }
+
+            console.log(solution(2, 5, 1));
+        </script>
+    </body>
+</html>
